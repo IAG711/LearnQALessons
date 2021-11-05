@@ -12,4 +12,9 @@ public class MainClassTest extends MainClass{
     public void testGetClassNumber(){
         Assert.assertTrue("Class number < 45", getClassNumber() > 45);
     }
+
+    @Test
+    public void testGetClassString(){
+        Assert.assertTrue("Word 'Hello' is not present in the string", getClassString().toLowerCase().contains("Hello".toLowerCase()));
+    }
 }
